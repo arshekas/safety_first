@@ -16,7 +16,7 @@ body {
 
 .jumbotron {
     color: white;
-    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.2)), url('background.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.2)), asset-url('background.jpg');
     background-size: cover;
     height: 330px;
 }
