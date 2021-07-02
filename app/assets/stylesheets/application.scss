@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f8f8;;
+    background-color: #f8f8f8;
 }
 #logo {
     float: left;
@@ -11,7 +11,11 @@ body {
 }
 
 #logo:hover {
-    color: lime;
+    color: black;
+}
+
+.navbar {
+    background-color: #f8f8f8 !important;
 }
 
 .jumbotron {
@@ -24,12 +28,13 @@ body {
 .btn-danger {
     background-color: green !important;
     transition: all 0.2s ease;
-
+    color: white;
 
     &:hover {
-            background-color: lime !important;
+            color: #000;
+            background-color: rgb(111, 204, 111) !important ;
             text-decoration: none;
-            color: black;
+            border-radius: 5px 5px !important;
     }
 }
 
@@ -42,16 +47,37 @@ body {
 
     p a {
         background-color: green !important;
-    transition: all 0.2s ease;
+        transition: all 0.2s ease;
 
 
     &:hover {
-            background-color: lime !important;
-            text-decoration: none;
-            color: black;
+        background-color: rgb(111, 204, 111) !important ;
+        text-decoration: none;
+        color: black;
     }
     }
 }
+.page-footer {
+    margin-top: 2rem;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+.page-footer >* {
+    padding: 0 10px;
+
+}
+
+.footer-links a, .footer-contact a{
+    color: green !important;
+
+    &:hover {
+        color: black !important;
+        text-decoration: none;
+    }
+}
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
