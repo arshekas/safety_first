@@ -7,25 +7,92 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        <%= link_to "Home", root_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item dropdown">
+        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products -->
+          <%= link_to "Products", "/products", class: "nav-link dropdown-toggle" %>
+        <!-- </a> -->
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Clearance Items</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">New Items</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Fall Protection</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Tools</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Confined Space</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Air Filtration</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Safety Clothing</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">First Aid</a>
+          <!-- <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a> -->
+        </div>
+        
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          About
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Company</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+
+          <a class="dropdown-item" href="#">Team</a>
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="#">Classroom</a>
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="#">Carrier</a>
+          <!-- <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a> -->
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Enrollment Calender</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Private Course Request</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">The Core of Fall Protection (Hybrid Edition)</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">The Core of Confined Space</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Mobile Equipments</a>
+          <!-- <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a> -->
+        </div>
+        
       </li>
+      <li class="nav-item">
+        <%= link_to "Rentals", "/products", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Services", "/products", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Resources", "/products", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Blog", "/products", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", "/products", class: "nav-link" %>
+      </li>
+      
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
