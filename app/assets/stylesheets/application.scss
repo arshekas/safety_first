@@ -93,8 +93,11 @@ body {
   }
 
 .text-muted {
-    color: green !important;
     font-family: 'ubuntu';
+}
+
+.featurette-heading {
+    color: green;
 }
 .featurette {
     width: 100%;
@@ -102,6 +105,7 @@ body {
 }
 .featurette-heading:hover {
     text-decoration: none;
+    color: black
 }
 .page-footer {
     margin-top: 2rem;
